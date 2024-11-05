@@ -1,0 +1,87 @@
+//Name:Siri Nandipaty student id:21449384
+COMPILATION
+To compile the program, save the source code in a file named myshell.c and run the following command in your terminal:
+gcc -o myshell myshell.c
+
+
+USAGE
+To run the shell, simply execute the compiled file using the following command:
+./myshell
+This will start the shell and present you with a prompt where you can enter commands.
+
+INTERNAL COMMANDS
+cd
+The cd command is used to change the current working directory.
+cd <directory>
+If directory is not specified, cd will change the current working directory to the home directory.
+
+dir
+The dir command is used to list the contents of a directory.
+dir <directory>
+directory is the name of the directory whose contents you want to list.
+
+echo
+The echo command is used to print text to the console.
+echo <text>
+text is the string that you want to print to the console.
+
+environ
+The environ command is used to print the environment variables.
+
+
+clr
+The clr command is used to clear the terminal screen.
+
+
+pause
+The pause command is used to pause the shell until the user presses the Enter key.
+
+quit
+The quit command is used to exit the shell.
+
+EXTERNAL COMMANDS
+The shell can also execute external commands by providing the full path of the command.
+<path_to_command> <arguments>
+path_to_command is the full path of the command that you want to execute. arguments are the arguments that you want to pass to the command.
+
+EXAMPLES
+
+Change directory
+myshell> cd /home/user/documents
+This command changes the current working directory to /home/user/documents.
+
+List directory contents
+myshell> dir /home/user/documents
+This command lists the contents of the /home/user/documents directory.
+
+Print text to console
+myshell> echo "Hello, world!"
+This command prints the string Hello, world! to the console.
+
+Print environment variables
+myshell> environ
+This command prints the environment variables to the console.
+
+Clear terminal screen
+myshell> clr
+This command clears the terminal screen.
+
+Pause the shell
+myshell> pause
+This command pauses the shell until the user presses the Enter key.
+
+Execute an external command
+myshell> /usr/bin/python3 myscript.py
+This command executes the myscript.py Python script using the Python 3 interpreter located at /usr/bin/python3.
+
+INPUT/ OUTPUT REDIRECTION
+The shell supports input and output redirection using the "<" and ">" symbols, respectively. To redirect input from a file, include the "<" symbol followed by the file name at the end of the command. To redirect output to a file, include the ">" symbol followed by the file name at the end of the command.
+
+myshell> sort < input.txt > output.txt
+
+
+BACKGROUND EXECUTION
+The shell supports background execution of programs using the "&" symbol. To launch a program in the background, include the "&" symbol at the end of the command. The shell will return to the prompt immediately after launching the program, allowing the user to enter additional commands while the program runs in the background.
+
+myshell> program &    # Launches "program" in the background
+
